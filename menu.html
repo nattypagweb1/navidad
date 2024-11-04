@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content=" Natalia Del Refugio Moya Martinez">
+    <meta name="description" content="hoja1">
+    <meta name="viewport" content="width=device-width",initial-scale=1.0>
+    <title>menu </title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #252839;
+        }
+        ul{ 
+           position: relative;
+           display: flex;
+           flex-direction: column;
+           gap: 30px;
+        }
+        ul li{
+            position: relative;
+            list-style: none;
+        }
+        ul li{
+            position: relative;
+            font-size: 4cm;
+            text-decoration: none;
+            line-height: 1em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color:transparent;
+            -webkit-text-stroke: 1px rgb(255,255,255,0.5);
+        }
+        ul li a::before{ 
+            content: attr(data-tex);
+            position: relative;
+            color: var(--clr);
+            width: 0;
+            overflow: hidden;
+            transition: 1s;
+            border-right: 8ps solid var(--clr);
+            -webkit-text-stroke:1px var(--clr)
+        }
+        ul li a:hover::before{
+            width: 100%;
+            filter: drop-shadow(0 0 25px var(--clr));
+
+        }
+    </style>
+    </head>
+    <body>
+        <ul>
+            <li sytyle="--clr:#00ade1"> 
+                <a href="INICIO.html"data-tex="&nbsp;INICIO"&nbsp;INICIO&nbsp;></a>
+            </li>
+            <li style="--clr:#ff6493">
+                <a href="IMAGENES.html"data-tex="&nbsp;IMAGENES"&nbsp;IMAGENES&nbsp;></a>
+            </li>
+           <li sytyle="--clr:#ffdd1c">
+            <a href="VIDEO NAVI.html"data-text="&nbsp;VIDEO"&nbsp;VIDEO&nbsp;></a>
+           </li>
+           <li style="--clr:#00dc82">
+            <a href="GIF.html"data-tex="&nbsp;VIDEO NAVI.html"&nbsp;VIDEO&nbsp;></a>
+           </li>
+           <li style="--clr:#00dc82">
+            <a href="VIDEO NAVI.html"data-tex="&nbsp;VIDEO NAVI.html"&nbsp;VIDEO&nbsp;></a>
+           </li>
+        </ul>
+
+</body>
+</html>

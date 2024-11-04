@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content=" Natalia Del Refugio Moya Martinez">
+    <meta name="description" content="introduccion ">
+    <meta name="viewport" content="width=device-width",initial-scale=1.0>
+    <title>galeria</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .galeria{
+            display: flex;
+            width: 500px;
+            height: 300px;;
+        }
+        .galeria img{
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            filter:brightness(80%);
+            transition: .7s ease;
+        }
+        .galeria img:hover{
+            width: 500px;
+            opacity: 1;
+            filter: brightness(150%);
+        }
+        body{
+            background-color:white;
+
+        }
+      
+</style>
+</head>
+<body>
+    <marquee><h1>Visperas navideñas</h1></marquee>
+<div class="galeria">
+    <img src="1.jpg"></img>
+    <img src="2.jpg"></img>
+    <img src="3.jpg"></img>
+    <img src="4.jpg"></img>
+    <img src="5.jpg"></img>
+    <p>´TOQUE PARA VER !!</p>
+
+<div>
+
+</body>
+</html>
